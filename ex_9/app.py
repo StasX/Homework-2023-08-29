@@ -24,7 +24,7 @@ for item in counted_numbers.items():
 
 is_couple_numbers = len(most_popular_numbers) > 1
 ends = "s are" if is_couple_numbers else " are "
-print(f"Most Popular number{ends}", end=" ")
+print(f"Number{ends}", end=" ")
 for item in most_popular_numbers:
     print(item[0], end=", ")
-print("\b\b  ")
+print(f"\b\b found {most_popular_numbers[0][0]}")
