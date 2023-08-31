@@ -23,8 +23,8 @@ for item in counted_numbers.items():
         most_popular_numbers.append(item)
 
 is_couple_numbers = len(most_popular_numbers) > 1
-ends = "s are" if is_couple_numbers else " are "
-print(f"Number{ends}", end=" ")
+print(f"Number", end=" ")
 for item in most_popular_numbers:
     print(item[0], end=", ")
-print(f"\b\b found {most_popular_numbers[0][0]}")
+ends = "s" if is_couple_numbers else ""
+print(f"\b\b founded {most_popular_numbers[0][0]} time(s)")
